@@ -1,5 +1,5 @@
 body{
-    background-color: #F9F9F9;
+    background-color: #eeeeee;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,12 +8,39 @@ body{
     width: 100%;
 }
 .content{
-    background-color: rgb(78, 56, 56);
-    padding: 20px;
+    width: 500px;
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+    border-radius: 6px;
 }
-
 .registrationForm{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
+}
+label{
+    width: 100%;
+}
+input{
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #E9E9E9;
+}
+input:focus{
+    outline: #009661;
+}
+.errMessage{
+    width: 100%;
+    color: red;
+    font-size: 12px;
+}
+button{
+    background-color: #009661;
+    color: white;
+    border: none;
+    height: 56px;
+    width: 100%;
+    cursor: pointer;
 }
