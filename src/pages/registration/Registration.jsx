@@ -13,7 +13,7 @@ function Registration(){
         if(data.password != data.confirmPassword){
             setConfirmPassword(false);
         }else{
-            axios.post("/api/registration", {
+            axios.post("http://localhost:8000/api/registration", {
                 username: data.fullName,
                 email: data.email,
                 phoneNumber: data.mobilePhone,
